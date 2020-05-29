@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+} 
+.nav-icon {
+	width: 25px;
+	height: 25px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+	display: inline-block;
+	width: 100%;
+}
+
+li {
+	float: right;
+	background-color: #ffffff;
+}
+
+li.title-li{
+	float: left;
+	background-color: #ffffff;
+
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	border: 1px solid black;
+}
+p {
+	color: white;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: #111;
+}
+
+li a:hover img {
+	filter: invert(1);
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 1.2rem;
+}
+/* @media screen and (min-width: 1180px) {
+	h1 {
+		font-size: 43px;
+	}
+	 h2 {
+		font-size: 33px;
+	}
+}
+@media screen and (max-width: 400px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	 h2 {
+		font-size: 1.2rem;
+	}
+}  */
+.navigationbar a {
+	
+	padding: 10px 10px 12px 10px;
+	border: 1px solid white;
+}
+.navigationbar {
+	color: white;
+}
+
+.navigationbar a:hover img{
+	filter: invert(1);
+}
+.navigationbar a:hover {
+	background-color: #111;
+}
+
+body {
+	background-image: url("https://www.solidbackgrounds.com/images/website/950x534/950x534-blue-abstract-noise-free-website-background-image.jpg")
+}
+#mainbodydiv {
+	background-color: rgba(76, 137, 191,0.5);
+}
