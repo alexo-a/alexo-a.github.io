@@ -1,121 +1,82 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Alex's Portfolio</title>
-    <meta name="descript   content="Web Developer Portfolio">
-    <a name="author" content="Alex Ostrowski">
-	<link rel="stylesheet" href="assets/css/styles.css">
-
-
+    <!-- Framework for this site largely borrowed from the example on w3schools: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy2&stacked=h -->
+    <title>Alex Ostrowski's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+        position: relative;
+        }
+        ul.nav-pills {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        nav {
+            z-index: 2;
+        }
+        .mains {
+            height: 100vh;
+            width: 100%;
+            padding-left: 10%;
+        }
+        #main{
+            width:100%;
+        }
+        .selectorarrows{
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+  <!--<link rel="stylesheet" href="styles.css">-->
 </head>
 
-<body onload="updateComic(353)">
-	<div class="d-flex navigationbar m-3">
-		<div class="p-2 mr-auto"><h1>Alex Ostrowski's Portfolio</h1></div>
-		<div><a href="github.com" target="_blank"><img class="nav-icon" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="Link to GitHub Page" /></a></div>
-		<div><a href="linkedin.com" target="_blank"><img class="nav-icon" src="https://image.flaticon.com/icons/svg/1384/1384046.svg" alt="Link to LinkedIn Page" /></a></div>
-	</div>
-	<br>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
 
-	<div id="mainbodydiv" class="container p-3 my-3 text-white">
-<!-- Sections -->
-    <section id="about-me-section"  class="container">
-		<h2>About Me</h2>
-		<p>
-			I am currently a test engineer with SSI Technologies, LLC.
-			I'll be moving to Champaign, IL in or before November 2020 and am 
-			looking to start my career in web development.
-			While I have loved most of my duties as a test engineer, I have especially enjoyed 
-			learning and programming with LabVIEW. Eager to continue doing that in or around Champaign,
-			I quickly became dismayed at the lack of opportunities for someone with my skillset in the area.
-			Fortunately, there were a couple instances where I needed to use Python at that position. This is what
-			eventually would cause me to enroll in a web developer bootcamp. Only a few weeks in, I am absolutely
-			loving the front-end material, despite the pace being a little slower than I'd like.
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="myScrollspy">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item mx-auto">
+                        <a onclick=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/271/271239.svg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1">Section 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Section 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Section 3</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a onclick=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/566/566015.svg"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="main">
+                <div id="section1" class="bg-success mains">    
+                    <h1>Section 1</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                </div>
+                <div id="section2" class="bg-warning mains"> 
+                    <h1>Section 2</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                </div>        
+                <div id="section3" class="bg-secondary mains">         
+                    <h1>Section 3</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		</p>
-    </section>
-    
-    <section id="work-history-section"  class="container">
-		<h2>Relevant Work History</h2>
-		<table class="table table-sm d-*-flex table-bordered table-light">
-			<thead class="thead-dark">
-				<tr>
-					<th class="p-0">Job Title</th>
-					<th class="p-0">Company</th>
-					<th class="p-0">Start Date</th>
-					<th class="p-0">End Date</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td class="p-0">Test Engineer</td>
-					<td class="p-0"><a href="https://www.ssi-sensors.com/" target="_blank">SSI Technologies, LLC</a></td>
-					<td class="p-0">May 2016</td>
-					<td class="p-0">Current</td>
-				</tr>
-				<tr>
-					<td class="p-0">Engineering Intern</td>
-					<td class="p-0"><a href="https://www.ssi-sensors.com/" target="_blank">SSI Technologies, LLC</a></td>
-					<td class="p-0">May 2015</td>
-					<td class="p-0">April 2016</td>
-				</tr>
-			</tbody>
-		</table>
-    </section>
-    
-    	<section id="hobbies-section" class="container">
-		<h2>Hobbies</h2>
-	</section>
-		<div>
-			<button onclick="updateComicRandom()">Get Stuff</button>
-			<div id="comic">No Comic</div>
-		</div>
-	</div>
-	<script>
-		<!-- This section largely borrowed from a couple of the links mentioned -->
-		<!-- in this site: https://bioresearch.byu.edu/cs260/jsonp/jsonp.html-->
-		function updateComic(number){
-  			var myurl= "https://dynamic.xkcd.com/api-0/jsonp/comic/"+number;
-  			console.log(myurl);
-  			$.ajax({
-    			url : myurl,
-    			crossDomain: true,
-    			dataType : "jsonp",
-    			success : function(parsed_json) {
-      				console.log(parsed_json);
-      				$("#comic").html(JSON.stringify(parsed_json["alt"]));
-				$("#comic").append(
-					$("<h3/>").text(parsed_json["title"] + ", " + parsed_json["num"]),
-					$("<img/>").attr({
-						src: parsed_json["img"],
-						title: parsed_json["title"],
-						alt: parsed_json["alt"]
-					})
-				);
-    			}
-  			});
-		}
-		function updateComicRandom(){
-			var randNum = Math.floor((Math.random() * 2312) + 1);
-			updateComic(randNum);
-		}
-
-</script>
 </body>
 </html>
