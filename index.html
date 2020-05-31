@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- all target="_blank"s are updated with  rel="noopener noreferrer"  thanks to https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/-->
     <!-- Framework for this site largely borrowed from the example on w3schools: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy2&stacked=h -->
     <title>Alex Ostrowski's Portfolio</title>
     <meta charset="utf-8">
@@ -9,74 +10,104 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-        body {
-        position: relative;
-        }
-        ul.nav-pills {
-            position: fixed;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        nav {
-            z-index: 2;
-        }
-        .mains {
-            height: 100vh;
-            width: 100%;
-            padding-left: 10%;
-        }
-        #main{
-            width:100%;
-        }
-        .selectorarrows{
-            width: 15px;
-            height: 15px;
-        }
-    </style>
-  <!--<link rel="stylesheet" href="styles.css">-->
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" type="text/javascript" ></script>
 </head>
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="100">
+    <header>
+        <h1><a href="./index.html">Alex Ostrowski's Portfolio</a></h1>
+    </header>
 
     <div class="container-fluid">
         <div class="row">
             <nav id="myScrollspy">
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item mx-auto">
-                        <a onclick=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/271/271239.svg"></a>
+                <ul class="nav nav-pills flex-column" id="navlist">
+                    <li>
+                        <a id="upArrow" href=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/271/271239.svg"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#section1">Section 1</a>
+                        <a id="s1" class="nav-link active" href="#introduction">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2">Section 2</a>
+                        <a id="s2" class="nav-link s2" href="#about-me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3">Section 3</a>
+                        <a id="s3" class="nav-link" href="#work-examples">Work Examples</a>
                     </li>
-                    <li class="nav-item mx-auto">
-                        <a onclick=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/566/566015.svg"></a>
+                    <li class="nav-item">
+                        <a id="s4" class="nav-link s4" href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="s5" class="nav-link" href="#contact-me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a id="downArrow" href=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/566/566015.svg"></a>
                     </li>
                 </ul>
             </nav>
             <div id="main">
-                <div id="section1" class="bg-success mains">    
-                    <h1>Section 1</h1>
+                <div id="introduction" class="mains container-fluid">    
+                    <h2>Introduction</h2>
+                    <p>Welcome!</p>
+                    <p>I'm Alex Ostrowski and I'm a test-engineer-turned-web-developer.</p>
+                    <section id="comic-section">
+                        <button id="randomizer">Get Random xkcd!</button>
+                        <div id="comic">No Comic</div>
+                    </section>
+                </div>
+                <div id="about-me" class="mains container-fluid"> 
+                    <h2>About Me</h2>
+                    <!--<div class="row">-->
+                        <section id="about-me-content" class="row">                        
+                            <section id="about-me-left-section" class="col-sm-6">
+                                <p>
+                                    I was born in a small town in northern Wisconsin and went to college at
+                                    <a href="https://www.uwplatt.edu/" target="_blank" rel="noopener noreferrer">UW-Platteville</a>, 
+                                    where I completed my bachelor of science degree in engineering physics. Throughout the curriculum,
+                                    I took courses on topics such as C++, Mathematica, calculus, statics and dynamics, public speaking,
+                                    optics, EM fields, quantum mechanics, and, of course, physics.
+                                </p>
+                                <p>
+                                    Out of school, I was offered a test engineer position with the same company I had an internship with,
+                                    <a href="https://www.ssi-sensors.com/" target="_blank" rel="noopener noreferrer">SSI Technologies, LLC</a>.
+                                    This position gave me an opportunity to learn a new programming language: LabVIEW. Despite having a graphical
+                                    programming interface, it employs most of the core programming disciplines required for other languages.
+                                </p>
+                                <p>
+                                    Realizing my love for learning and working with new programming languages, I began to dabble with Python,
+                                    which was inexplicably fun for me; it felt like the Wild West. Eventually, this led me to explore web development,
+                                    culminating in my enrollment in the UW-Extension Online Coding Bootcamp.
+                                </p>
+                            </section>
+                            <!-- MAKE THIS FOR DESKTOPS ONLY -->
+                            <div class="col-sm-6 hide-on-mobile">
+                                <p>
+                                    Here's an example of my first foray into JavaScript, created while doing the pre-course exercises:
+                                </p>
+
+                            </div>
+                        </section>  
+                    <!--</div>-->
+                </div>        
+                <div id="work-examples" class="mains container-fluid">         
+                    <h2>Example of My Work</h2>
                     <p>Try to scroll this section and look at the navigation list while scrolling!</p>
                 </div>
-                <div id="section2" class="bg-warning mains"> 
-                    <h1>Section 2</h1>
+                <div id="hobbies" class="mains container-fluid"> 
+                    <h2>Hobbies</h2>
                     <p>Try to scroll this section and look at the navigation list while scrolling!</p>
                 </div>        
-                <div id="section3" class="bg-secondary mains">         
-                    <h1>Section 3</h1>
+                <div id="contact-me" class="mains container-fluid">         
+                    <h2>Contact Info</h2>
                     <p>Try to scroll this section and look at the navigation list while scrolling!</p>
                 </div>
             </div>
         </div>
     </div>
 
+    
+    
 </body>
 </html>

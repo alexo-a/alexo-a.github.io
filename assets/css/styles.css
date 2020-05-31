@@ -1,28 +1,104 @@
-* {
-	margin: 0;
-	padding: 0;
-} 
 body {
-    position: relative;
+position: relative;
+background-color: #cccccc;
 }
+
 ul.nav-pills {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+position: fixed;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
 }
+
 nav {
-    z-index: 2;
+z-index: 2;
 }
+
 .mains {
-    height: 100vh;
-    width: 100%;
-    padding-left: 10%;
+min-height: 100vh;
+width: 100%;
+padding-left: 110px;/*10%;*/
+border-bottom: 2px solid white;
+padding-top: 100px;
 }
+
 #main{
-    width:100%;
+width:100%;
 }
 .selectorarrows{
-    width: 15px;
-    height: 15px;
+width: 15px;
+height: 15px;
+margin-left: 40px;
 }
+
+.nav-link {
+    background-color: transparent;
+    color: black;
+}
+li a .active {
+    background-color: white;
+    color: black;
+}
+
+#navlist li a{
+padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #666666;
+    margin-bottom: 20px;
+}
+
+h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
+    text-decoration: none;
+    color: black;
+}
+#comic-section {
+    width: 50%;
+    margin: auto;
+}
+#comic, #comic img {
+    /*width: 50%;*/
+    margin: auto;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    #myScrollspy, .hide-on-mobile {
+      display: none;
+    }
+}
+
+
+
+
+
+/*#comic img {
+    margin: auto;
+}*/
+
+
+
+
+
+
+
+
+/*#about-me-left-section {
+    border-right: 2px solid black;
+    width: 40%;
+    padding-right: 20px;
+    margin-right: 20px;
+    
+    height: 100%;
+    display: inline-block;
+}
+
+.right-section {
+    margin: 0px 50px 0px 0px;
+    width: 10%;
+    
+    display: inline-block;
+}*/
