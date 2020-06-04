@@ -119,7 +119,14 @@ $(document).ready(function() {
         //formats the style.transform string necessary to move the box.
         return "translate(" + x.toString() + "px, " + y.toString() + "px) rotate(" + rotationAngle + "deg)"
     };
-
+    document.getElementById("fishing").addEventListener("mouseover", function(){
+        var fishingtext = document.getElementById("fishing-text");
+        fishingtext.style.display = "block";
+    });
+    document.getElementById("fishing").addEventListener("mouseout", function(){
+        var fishingtext = document.getElementById("fishing-text");
+        fishingtext.style.display = "none";
+    });
 
 });
 
