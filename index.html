@@ -16,96 +16,108 @@
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="100">
-    <header>
-        <h1><a href="./index.html">Alex Ostrowski's Portfolio</a></h1>
+    <audio id="ope" src="assets/sounds/ope.mp3" type="audio/mpeg"></audio>
+    <!--<audio id="sorry" src="assets/sounds/sorry.mp3" type="audio/mpeg"></audio>-->
+    <header class="w-100 fixed-top">
+        
+        <nav id="myScrollspy" class=" navbar navbar-expand-sm container-fluid  d-flex justify-content-between">
+            
+            <ul class="nav nav-pills" id="navlist">
+                <li class="nav-item nav-link">
+                    <a id="s1" class="nav-link active  rounded-lg border" href="#introduction">Introduction</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a id="s2" class="nav-link  rounded-lg border" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a id="s3" class="nav-link rounded-lg border" href="#work-examples">Work Examples</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a id="s4" class="nav-link rounded-lg border" href="#hobbies">Hobbies</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a id="s5" class="nav-link rounded-lg border" href="#contact-me">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container-fluid">
-        <div class="row">
-            <nav id="myScrollspy">
-                <ul class="nav nav-pills flex-column" id="navlist">
-                    <li>
-                        <a id="upArrow" href=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/271/271239.svg"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="s1" class="nav-link active" href="#introduction">Introduction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="s2" class="nav-link s2" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="s3" class="nav-link" href="#work-examples">Work Examples</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="s4" class="nav-link s4" href="#hobbies">Hobbies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="s5" class="nav-link" href="#contact-me">Contact Me</a>
-                    </li>
-                    <li>
-                        <a id="downArrow" href=""><img class="selectorarrows" src="https://image.flaticon.com/icons/svg/566/566015.svg"></a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="main">
-                <div id="introduction" class="mains container-fluid">    
-                    <h2>Introduction</h2>
-                    <p>Welcome!</p>
-                    <p>I'm Alex Ostrowski and I'm a test-engineer-turned-web-developer.</p>
-                    <section id="comic-section">
-                        <button id="randomizer">Get Random xkcd!</button>
-                        <div id="comic">No Comic</div>
-                    </section>
-                </div>
-                <div id="about-me" class="mains container-fluid"> 
-                    <h2>About Me</h2>
-                    <!--<div class="row">-->
-                        <section id="about-me-content" class="row">                        
-                            <section id="about-me-left-section" class="col-sm-6">
-                                <p>
-                                    I was born in a small town in northern Wisconsin and went to college at
-                                    <a href="https://www.uwplatt.edu/" target="_blank" rel="noopener noreferrer">UW-Platteville</a>, 
-                                    where I completed my bachelor of science degree in engineering physics. Throughout the curriculum,
-                                    I took courses on topics such as C++, Mathematica, calculus, statics and dynamics, public speaking,
-                                    optics, EM fields, quantum mechanics, and, of course, physics.
-                                </p>
-                                <p>
-                                    Out of school, I was offered a test engineer position with the same company I had an internship with,
-                                    <a href="https://www.ssi-sensors.com/" target="_blank" rel="noopener noreferrer">SSI Technologies, LLC</a>.
-                                    This position gave me an opportunity to learn a new programming language: LabVIEW. Despite having a graphical
-                                    programming interface, it employs most of the core programming disciplines required for other languages.
-                                </p>
-                                <p>
-                                    Realizing my love for learning and working with new programming languages, I began to dabble with Python,
-                                    which was inexplicably fun for me; it felt like the Wild West. Eventually, this led me to explore web development,
-                                    culminating in my enrollment in the UW-Extension Online Coding Bootcamp.
-                                </p>
-                            </section>
-                            <!-- MAKE THIS FOR DESKTOPS ONLY -->
-                            <div class="col-sm-6 hide-on-mobile">
-                                <p>
-                                    Here's an example of my first foray into JavaScript, created while doing the pre-course exercises:
-                                </p>
+    <!--<div class="container-fluid">-->
 
-                            </div>
-                        </section>  
-                    <!--</div>-->
-                </div>        
-                <div id="work-examples" class="mains container-fluid">         
-                    <h2>Example of My Work</h2>
-                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+    <div id="main">
+        <div id="introduction" class="mains container-fluid">  
+            <h1>Alex Ostrowski's Portfolio</h1>  
+            <!--<h2>Introduction</h2>-->
+            <p>Welcome!</p>
+            <p>I'm Alex Ostrowski and I'm a test-engineer-turned-web-developer.</p>
+            <section id="comic-section" class="hide-on-mobile">
+                <button id="randomizer">Get Random xkcd!</button>
+                <div id="comic">No Comic</div>
+            </section>
+        </div>
+        <div id="about-me" class="mains container-fluid"> 
+            <h2>About Me</h2>
+            <!--<div class="row">-->
+            <section id="about-me-content" class="row">                        
+                <section id="about-me-left-section" class="col-sm-6 ">
+                    <p>
+                        I was born in a small town in northern Wisconsin and went to college at
+                        <a href="https://www.uwplatt.edu/" target="_blank" rel="noopener noreferrer">UW-Platteville</a>, 
+                        where I completed my bachelor of science degree in engineering physics. Throughout the curriculum,
+                        I took courses on topics such as C++, Mathematica, calculus, statics and dynamics, public speaking,
+                        optics, EM fields, quantum mechanics, and, of course, physics.
+                    </p>
+                    <p>
+                        Out of school, I was offered a test engineer position with the same company I had an internship with,
+                        <a href="https://www.ssi-sensors.com/" target="_blank" rel="noopener noreferrer">SSI Technologies, LLC</a>.
+                        This position gave me an opportunity to learn a new programming language: LabVIEW. Despite having a graphical
+                        programming interface, it employs most of the core programming disciplines required for other languages.
+                    </p>
+                    <p>
+                        Realizing my love for learning and working with new programming languages, I began to dabble with Python,
+                        which was inexplicably fun for me; it felt like the Wild West. Eventually, this led me to explore web development,
+                        culminating in my enrollment in the UW-Extension Online Coding Bootcamp.
+                    </p>
+                </section>
+                <!-- MAKE THIS FOR DESKTOPS ONLY -->
+                <div id="game-section" class="col-sm-6 hide-on-mobile border-left border-dark">
+                    <p>
+                        Here's an example of my first foray into JavaScript, created while exploring on my own after I finished the pre-course exercises.
+                    </p>
+                    <p>
+                        (Turn your sound on for my added Midwestern flair)
+                    </p>
+                    <p>Try to click the orange box!</p>
+                    <form>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="game-mode">
+                            <label class="custom-control-label" for="game-mode">Game Mode Enable?</label>
+                        </div>
+                    </form>
+                    <div id="game-area" class="w-100">
+                        
+                        <div id="box"></div>
+                    </div>
                 </div>
-                <div id="hobbies" class="mains container-fluid"> 
-                    <h2>Hobbies</h2>
-                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-                </div>        
-                <div id="contact-me" class="mains container-fluid">         
-                    <h2>Contact Info</h2>
-                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-                </div>
+            </section>  
+        </div>        
+        <div id="work-examples" class="mains container-fluid">         
+            <h2>Examples of My Work</h2>
+            <div>
+                
             </div>
         </div>
+        <div id="hobbies" class="mains container-fluid"> 
+            <h2>Hobbies</h2>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>        
+        <div id="contact-me" class="mains container-fluid">         
+            <h2>Contact Info</h2>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>
     </div>
+</div>
+
 
     
     
