@@ -78,14 +78,23 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
     align-content: space-around;
     flex-wrap: wrap
 }
-.flex-container > div {
+.hobby-container {
     /*max-width: 25%;*/
     height: 50vh;
     background-size: cover;
     color: white;
     display: flex;
-    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center center;
 }
+.hobby-text {
+    color: white;
+    display: none;
+    text-align: center;
+    font-size: 22px;
+}
+
 #woodworking {
     background-image: url("../images/drill.jpeg");
 }
@@ -106,6 +115,7 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
     background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1)),
     url("../images/drill.jpeg");
 }
+
 #video-games:hover {
     background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1)),
     url("../images/gaming-pc.jpeg");
@@ -114,9 +124,20 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
     background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,1)),
     url("../images/sushi.jpg");
 }
-.hobby-text {
-    color: white;
-    display: flex;
-    align-content: flex-end;
-    display: none;
+
+.hobby-container:hover > span{
+    display: block;
 }
+.contact-icon {
+    height: 50px;
+    width: 50px;
+}
+.contact-set a {
+    display: inline-block;
+}
+.contact-set a:hover img {
+    filter: invert(1);
+} 
+.contact-set a:hover {
+    background-color: black;
+} 
