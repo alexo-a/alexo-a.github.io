@@ -141,3 +141,31 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
 .contact-set a:hover {
     background-color: black;
 } 
+.work-flex-container {
+
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-flex-container > div {
+    background-color: rgba(0, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+
+}
+
+#grid-run-buddy {
+    background-image: url("../images/run-buddy-ss.png");
+    background-size: cover;
+}
+
+.work-flex-side {
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex-item {
+    border: 2px solid black;
+}
