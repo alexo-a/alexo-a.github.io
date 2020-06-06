@@ -67,15 +67,16 @@ $(document).ready(function() {
             dataType : "jsonp",
             success : function(parsed_json) {
                 console.log(parsed_json);
-                jQuery("#comic").html(JSON.stringify(parsed_json["alt"]));
+                jQuery("#comic").html("");//JSON.stringify(parsed_json["alt"])"");//add alt text
                 jQuery("#comic").append(
+                    jQuery("<h3/>").text(parsed_json["title"] + ", #" + parsed_json["num"]),
                     jQuery("<img/>").attr({
-                        src: parsed_json["img"],
+                        src: parsed_json["img"],  //add image
                         //jQuery("<img/>").attr({
-                        alt: parsed_json["alt"],
-                        title: parsed_json["title"]
+                        alt: parsed_json["alt"],  //add alt text
+                        title: parsed_json["title"]  
                     }),
-                    jQuery("<h3/>").text(parsed_json["title"] + ", " + parsed_json["num"])
+                    jQuery("<p/>").text(JSON.stringify(parsed_json["alt"]))
                 );
             }
         });
@@ -119,14 +120,11 @@ $(document).ready(function() {
         //formats the style.transform string necessary to move the box.
         return "translate(" + x.toString() + "px, " + y.toString() + "px) rotate(" + rotationAngle + "deg)"
     };
-    /*document.getElementById("fishing").addEventListener("mouseover", function(){
-        var fishingtext = document.getElementById("fishing-text");
-        fishingtext.style.display = "block";
+
+   //This beauty from https://github.com/twbs/bootstrap/issues/12852#issuecomment-36163121
+    jQuery(".topnav #myLinks a").click(function(event) {
+        document.getElementById("myLinks").style.display = "none";
     });
-    document.getElementById("fishing").addEventListener("mouseout", function(){
-        var fishingtext = document.getElementById("fishing-text");
-        fishingtext.style.display = "none";
-    });*/
 
 });
 
@@ -137,5 +135,13 @@ function play(track) {
         audio.play();
     }else{
         audio.currentTime = 0
+    }
+}
+function expandNav() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
 }
