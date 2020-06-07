@@ -1,16 +1,14 @@
-
-
 var color1 = "#0066ff";
 var color2 = "#FCF97A";
 
 $(document).ready(function() {
     $.noConflict();
     document.getElementById("ope").load();
-    //document.getElementById("sorry").load();
+
     var boxStyle = document.getElementById("box").style;
     var rotationAngle = 0;
     var transformArray;
-    //var gameModeOn = false;
+
     if (boxStyle.transform.length == 0){
         transformArray = [0,0];
         } else {
@@ -19,8 +17,8 @@ $(document).ready(function() {
     var xPos = parseFloat(transformArray[0]);
     var yPos = parseFloat(transformArray[1]);
 
-    document.getElementById("s1").style.backgroundColor = "#FCF97A";
-    document.getElementById("s1").style.color = "#0066ff"; //blue
+    document.getElementById("s1").style.backgroundColor = color2;
+    document.getElementById("s1").style.color = color1; //blue
 
     //Thank god for SO: https://stackoverflow.com/questions/48693913/bootstrap-4-activate-bs-scrollspy-event-is-not-firing
     jQuery(window).on('activate.bs.scrollspy', function () {
@@ -28,30 +26,6 @@ $(document).ready(function() {
             var hash = jQuery("#myScrollspy").find("ul li a.active").attr("href");
             jQuery('.nav-link').css({ 'background-color': color2, 'color': color1});  
             jQuery('.active').css({ 'background-color': color1,  'color': color2}); 
-        
-            //change hrefs on arrow up and arrow down
-/*             switch (hash) {
-                case "#introduction":
-                    document.getElementById("upArrow").href="";
-                    document.getElementById("downArrow").href="#about-me";
-                    break;
-                case "#about-me":
-                    document.getElementById("upArrow").href="#introduction";
-                    document.getElementById("downArrow").href="#work-examples";
-                    break;
-                case "#work-examples":
-                    document.getElementById("upArrow").href="#about-me";
-                    document.getElementById("downArrow").href="#hobbies";
-                    break;
-                case "#hobbies":
-                    document.getElementById("upArrow").href="#work-examples";
-                    document.getElementById("downArrow").href="#contact-me";
-                    break;
-                case "#contact-me":
-                    document.getElementById("upArrow").href="#hobbies";
-                    document.getElementById("downArrow").href="#contact-me";
-                    break;
-            }; */
         }
     });
   
@@ -68,12 +42,11 @@ $(document).ready(function() {
             dataType : "jsonp",
             success : function(parsed_json) {
                 console.log(parsed_json);
-                jQuery("#comic").html("");//JSON.stringify(parsed_json["alt"])"");//add alt text
+                jQuery("#comic").html("");
                 jQuery("#comic").append(
                     jQuery("<h3/>").text(parsed_json["title"] + ", #" + parsed_json["num"]),
                     jQuery("<img/>").attr({
                         src: parsed_json["img"],  //add image
-                        //jQuery("<img/>").attr({
                         alt: parsed_json["alt"],  //add alt text
                         title: parsed_json["title"]  
                     }),
@@ -112,11 +85,10 @@ $(document).ready(function() {
             yPos = yPossible;
             rotationAngle = Math.floor(((Math.random()-.5)*360));
             boxStyle.transform = AssembleTransformString(xPos,yPos,rotationAngle);
-            //document.getElementById("ope").play();
-            //if (Math.round(Math.random())==1){play('ope')} else {play('sorry')};
             play('ope');
         }
     });
+    
     function AssembleTransformString(x, y, r){
         //formats the style.transform string necessary to move the box.
         return "translate(" + x.toString() + "px, " + y.toString() + "px) rotate(" + rotationAngle + "deg)"
@@ -129,6 +101,8 @@ $(document).ready(function() {
 
 });
 
+
+
 function play(track) {
     //Thanks to the answer here: https://stackoverflow.com/a/17636398
     var audio = document.getElementById(track);
@@ -138,6 +112,7 @@ function play(track) {
         audio.currentTime = 0
     }
 }
+
 function expandNav() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
