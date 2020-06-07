@@ -1,13 +1,19 @@
 :root {
     --color1: #0066ff;
     --color2: #FCF97A;
-  }
+}
+
+
 
 body {
 position: relative;
 background-color: var(--color2);
 font-family: 'IBM Plex Sans', sans-serif'Roboto';
 color: var(--color1);
+}
+
+p {
+    font-size: 20px;
 }
 
 header {
@@ -37,6 +43,7 @@ padding-top: 100px;
 
 #main{
 width:100%;
+margin-top: 40px;
 }
 
 .about-me {
@@ -91,7 +98,17 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
     text-align: center;
     margin: 25px auto;
     padding: 10px;
+    color: var(--color1);
+    background-color: var(--color2);
+    border: 2px solid var(--color1);
+    border-radius: 5px;
 }
+
+#randomizer:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
 #comic, #comic img {
     /*width: 50%;*/
     margin: auto;
