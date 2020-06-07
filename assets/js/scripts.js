@@ -63,7 +63,11 @@ $(document).ready(function() {
     
     //Clicked inside the box
     document.getElementById("box").addEventListener("click", function(){ 
-    alert("Damn, that wasn't supposed to happen. Try again?");
+        alert("Damn, that wasn't supposed to happen. Try again?");
+    });
+
+    document.getElementById("game-mode").addEventListener("click", function(){ 
+        boxStyle.transform = AssembleTransformString(0,0,rotationAngle-rotationAngle);
     });
         
     document.getElementById("box").addEventListener("mousemove", function(){  //hover over box and it moves
@@ -88,10 +92,10 @@ $(document).ready(function() {
             play('ope');
         }
     });
-    
+
     function AssembleTransformString(x, y, r){
         //formats the style.transform string necessary to move the box.
-        return "translate(" + x.toString() + "px, " + y.toString() + "px) rotate(" + rotationAngle + "deg)"
+        return "translate(" + x.toString() + "px, " + y.toString() + "px) rotate(" + r + "deg)"
     };
 
    //This beauty from https://github.com/twbs/bootstrap/issues/12852#issuecomment-36163121
