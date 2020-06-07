@@ -4,4 +4,4 @@
 My first major from-scratch website, written with HTML, CSS, JavaScript, Bootstrap, and some JQuery.
 
 Here is a screenshot of my portfolio:
-![screenshot of my portfolio](https://github.com/alexo-a/alexo-a.github.io/master/final-screenshot.png?raw=true)
+![screenshot of my portfolio](./final-screenshot.PNG?raw=true)
