@@ -1,6 +1,7 @@
 
 
-
+var color1 = "#0066ff";
+var color2 = "#FCF97A";
 
 $(document).ready(function() {
     $.noConflict();
@@ -18,15 +19,15 @@ $(document).ready(function() {
     var xPos = parseFloat(transformArray[0]);
     var yPos = parseFloat(transformArray[1]);
 
-    document.getElementById("s1").style.backgroundColor = "white";
-    document.getElementById("s1").style.color = "black";
+    document.getElementById("s1").style.backgroundColor = "#FCF97A";
+    document.getElementById("s1").style.color = "#0066ff"; //blue
 
     //Thank god for SO: https://stackoverflow.com/questions/48693913/bootstrap-4-activate-bs-scrollspy-event-is-not-firing
     jQuery(window).on('activate.bs.scrollspy', function () {
         if (document.getElementById("myScrollspy").style.display != "none") {
             var hash = jQuery("#myScrollspy").find("ul li a.active").attr("href");
-            jQuery('.nav-link').css({ 'background-color': 'white', 'color': 'black'});  
-            jQuery('.active').css({ 'background-color': 'black',  'color': 'white'}); 
+            jQuery('.nav-link').css({ 'background-color': color2, 'color': color1});  
+            jQuery('.active').css({ 'background-color': color1,  'color': color2}); 
         
             //change hrefs on arrow up and arrow down
 /*             switch (hash) {
