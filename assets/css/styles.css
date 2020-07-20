@@ -222,8 +222,8 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
     background-size: cover;
     width: 60%;
 }
-#flex-portfolio {
-    background-image: url("../images/screencapture.PNG");
+#flex-hopto {
+    background-image: url("../images/HopTo.PNG");
     background-size: cover;
     margin-bottom: 5px;
 }
