@@ -217,8 +217,8 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
     align-content: flex-start;
 }
 
-#flex-run-buddy {
-    background-image: url("../images/run-buddy-ss.PNG");
+#flex-main {
+    background-image: url("../images/Pagebound.png");
     background-size: cover;
     width: 60%;
 }
