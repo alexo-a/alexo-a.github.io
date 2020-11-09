@@ -218,18 +218,18 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
 }
 
 #flex-main {
-    background-image: url("../images/Pagebound.png");
+    background-image: url("../images/Projectivity.PNG");
     background-size: cover;
     width: 60%;
 }
-#flex-hopto {
-    background-image: url("../images/HopTo.PNG");
+#flex-top-right {
+    background-image: url("../images/Pagebound.png");
     background-size: cover;
     margin-bottom: 5px;
 }
 
-#flex-a-plus {
-    background-image: url("../images/traffic-cone.png");
+#flex-bottom-right {
+    background-image: url("../images/HopTo.PNG");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -355,7 +355,7 @@ h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
         display: block;
     }
 
-    #flex-run-buddy {
+    #flex-main {
         width: 100%;
         margin-bottom: 5px;
     }
