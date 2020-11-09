@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- all target="_blank"s are updated with  rel="noopener noreferrer"  thanks to https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/-->
     <!-- Framework for this site largely borrowed from the example on w3schools: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy2&stacked=h -->
@@ -12,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/scripts.js" type="text/javascript" ></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -22,7 +23,7 @@
 
     <header class="hide-on-mobile">
         <nav id="myScrollspy" class=" navbar navbar-expand-sm container-fluid  d-flex justify-content-between">
-            
+
             <ul class="nav nav-pills" id="navlist">
                 <li class="nav-item nav-link">
                     <a id="s1" class="nav-link active  rounded-lg border" href="#introduction">Introduction</a>
@@ -63,11 +64,13 @@
 
     <div id="main">
 
-        <div id="introduction" class="mains">  
-            <h1>Alex Ostrowski's Portfolio</h1>  
+        <div id="introduction" class="mains">
+            <h1>Alex Ostrowski's Portfolio</h1>
             <p>Welcome!</p>
             <p>I'm Alex Ostrowski and I'm a test-engineer-turned-web-developer.</p>
-            <p class="hide-on-mobile">Feel free to check out some comics from <a href="https://xkcd.com/" target="_blank" rel="noopener noreferrer">xkcd</a>. These hilarious comics often contain references to both engineering and programming, so I particularly enjoy them!</p>
+            <p class="hide-on-mobile">Feel free to check out some comics from <a href="https://xkcd.com/"
+                    target="_blank" rel="noopener noreferrer">xkcd</a>. These hilarious comics often contain references
+                to both engineering and programming, so I particularly enjoy them!</p>
             <section class="comic-section hide-on-mobile">
                 <button id="randomizer">Get Random xkcd comic</button>
                 <div id="comic">No Comic</div>
@@ -76,34 +79,43 @@
 
         <div class="underline"></div>
 
-        <div id="about-me" class="mains container-fluid"> 
+        <div id="about-me" class="mains container-fluid">
             <h2>About Me</h2>
-            <section class="about-me">       
+            <section class="about-me">
 
                 <section id="about-me-left-section" class="about-me-subsection">
                     <p>
                         I was born in a small town in northern Wisconsin and went to college at
-                        <a href="https://www.uwplatt.edu/" target="_blank" rel="noopener noreferrer">UW-Platteville</a>, 
-                        where I completed my bachelor of science degree in engineering physics. Throughout the curriculum,
-                        I took courses on topics such as C++, Mathematica, calculus, statics and dynamics, public speaking,
+                        <a href="https://www.uwplatt.edu/" target="_blank" rel="noopener noreferrer">UW-Platteville</a>,
+                        where I completed my bachelor of science degree in engineering physics. Throughout the
+                        curriculum,
+                        I took courses on topics such as C++, Mathematica, calculus, statics and dynamics, public
+                        speaking,
                         optics, EM fields, quantum mechanics, and, of course, physics.
                     </p>
                     <p>
-                        Out of school, I was offered a test engineer position with one of the companies I had an internship with,
-                        <a href="https://www.ssi-sensors.com/" target="_blank" rel="noopener noreferrer">SSI Technologies, LLC</a>.
-                        This position gave me an opportunity to learn a new programming language: LabVIEW. Despite having a graphical
-                        programming interface, it employs most of the core programming disciplines required for other languages.
+                        Out of school, I was offered a test engineer position with one of the companies I had an
+                        internship with,
+                        <a href="https://www.ssi-sensors.com/" target="_blank" rel="noopener noreferrer">SSI
+                            Technologies, LLC</a>.
+                        This position gave me an opportunity to learn a new programming language: LabVIEW. Despite
+                        having a graphical
+                        programming interface, it employs most of the core programming disciplines required for other
+                        languages.
                     </p>
                     <p>
-                        Realizing my love for learning and working with new programming languages, I began to dabble with Python,
-                        which was inexplicably fun for me; it felt like the Wild West. Eventually, this led me to explore web development,
+                        Realizing my love for learning and working with new programming languages, I began to dabble
+                        with Python,
+                        which was inexplicably fun for me; it felt like the Wild West. Eventually, this led me to
+                        explore web development,
                         culminating in my enrollment in the UW-Extension Online Coding Bootcamp.
                     </p>
                 </section>
 
                 <section id="game-section" class="game-section hide-on-mobile">
                     <p>
-                        Here's an example of my first foray into JavaScript, created while exploring on my own after I finished the bootcamp's pre-course exercises.
+                        Here's an example of my first foray into JavaScript, created while exploring on my own after I
+                        finished the bootcamp's pre-course exercises.
                     </p>
                     <p>
                         (Turn your sound on for my added Midwestern flair)
@@ -119,25 +131,28 @@
                         <div id="box"></div>
                     </div>
                 </section>
-                
-            </section>  
-        </div>        <!-- end of about me-->
+
+            </section>
+        </div> <!-- end of about me-->
 
         <div class="underline"></div>
 
-        <div id="work-examples" class="mains container-fluid">         
+        <div id="work-examples" class="mains container-fluid">
             <h2>Examples of My Work</h2>
             <div class="work-flex-container">
-                <a class="flex-item" id="flex-main"  target="_blank" rel="noopener noreferrer" href="https://github.com/TheBobbyLlama/pagebound">
-                    <p>Pagebound: JS Handlebars Node Foundation jQuery</p>
+                <a href="https://github.com/alexo-a/projectivity"  target="_blank" class="flex-item" id="flex-main">
+                    <p>Projectivity: JS MERN ChartJS Apollo </p>
                 </a>
+
                 <div class="work-flex-side">
-                    <a href="https://laurenceokite.github.io/hop-to/" class="flex-item" id="flex-hopto">
-                         <p>HTML CSS JavaScript Foundation jQuery APIs</p>
+                    <a class="flex-item" id="flex-top-right" target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/TheBobbyLlama/pagebound">
+                        <p>Pagebound: JS Handlebars Node Foundation jQuery</p>
                     </a>
-                    <a href="#" class="flex-item" id="flex-a-plus">
-                        <p>(Coming Soon) A Plus Plumbing and Heating, LLC</p>
+                    <a href="https://laurenceokite.github.io/hop-to/" class="flex-item" id="flex-bottom-right">
+                        <p>HopTo: HTML CSS JavaScript Foundation jQuery APIs</p>
                     </a>
+
                 </div>
 
             </div>
@@ -145,37 +160,44 @@
 
         <div class="underline"></div>
 
-        <div id="hobbies" class="mains container-fluid"> 
+        <div id="hobbies" class="mains container-fluid">
             <h2>Hobbies</h2>
             <p>I enjoy fishing, video games, woodworking, and eating wonderful food.</p>
             <div class="flex-container">
-                <div class="col-sm-3 hobby-container" id="fishing"><span class="hobby-text" id="fishing-text">King salmon caught in Lake Michigan</span></div>
-                <div class="col-sm-3 hobby-container" id="video-games"><span class="hobby-text" id="video-games-text">Favorite games include Old School Runescape, Diablo, and Ark: Survival Evolved</span></div>
-                <div class="col-sm-3 hobby-container" id="woodworking"><span class="hobby-text" id="woodworking-text">Drill press action photo</span></div>
-                <div class="col-sm-3 hobby-container" id="food"><span class="hobby-text" id="food-text">Sushi from a restaurant in Janesville, WI</span></div>
+                <div class="col-sm-3 hobby-container" id="fishing"><span class="hobby-text" id="fishing-text">King
+                        salmon caught in Lake Michigan</span></div>
+                <div class="col-sm-3 hobby-container" id="video-games"><span class="hobby-text"
+                        id="video-games-text">Favorite games include Old School Runescape, Diablo, and Ark: Survival
+                        Evolved</span></div>
+                <div class="col-sm-3 hobby-container" id="woodworking"><span class="hobby-text"
+                        id="woodworking-text">Drill press action photo</span></div>
+                <div class="col-sm-3 hobby-container" id="food"><span class="hobby-text" id="food-text">Sushi from a
+                        restaurant in Janesville, WI</span></div>
             </div>
         </div> <!-- end of hobbies-->
 
         <div class="underline"></div>
 
-        <div id="contact-me" class="mains container-fluid">         
+        <div id="contact-me" class="mains container-fluid">
             <h2>Contact Info</h2>
             <!-- links to resume pdf, linkedin, github, email address, cell #? -->
             <div class="mt-4 mx-auto d-flex flex-wrap align-content-between contact-icon-area">
                 <div class="contact-set flex-fill">
-                    <a href="https://drive.google.com/file/d/1tIWakINFTf1ajq_qcxUOKIz1MR8sSaFi/view?usp=sharing"  target="_blank" rel="noopener noreferrer" >
+                    <a href="https://drive.google.com/file/d/1tIWakINFTf1ajq_qcxUOKIz1MR8sSaFi/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer">
                         <img src="./assets/images/portrait.svg" class="contact-icon">
                     </a>
                     <div class="contact-text">Resume</div>
                 </div>
                 <div class="contact-set flex-fill">
-                    <a href="https://www.linkedin.com/in/alexander-ostrowski-3603aa89/"  target="_blank" rel="noopener noreferrer" >
+                    <a href="https://www.linkedin.com/in/alexander-ostrowski-3603aa89/" target="_blank"
+                        rel="noopener noreferrer">
                         <img src="./assets/images/linkedin.svg" class="contact-icon">
                     </a>
                     <div class="contact-text">LinkedIn</div>
                 </div>
                 <div class="contact-set flex-fill">
-                    <a href="https://github.com/alexo-a"  target="_blank" rel="noopener noreferrer" >
+                    <a href="https://github.com/alexo-a" target="_blank" rel="noopener noreferrer">
                         <img src="./assets/images/github.png" class="contact-icon">
                     </a>
                     <div class="contact-text">GitHub</div>
@@ -188,19 +210,27 @@
                 </div>
 
             </div>
-            <div class="w-100"><!--attributions-->
-                <div class="mt-5 w-100 mx-auto">GitHub icon made by <a href="https://www.flaticon.com/authors/freepik"  target="_blank" rel="noopener noreferrer" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"  target="_blank" rel="noopener noreferrer" title="Flaticon">www.flaticon.com</a></div>
-                <div class="mt-3 mx-auto">Other icons made by <a href="https://www.flaticon.com/authors/google"  target="_blank" rel="noopener noreferrer" title="Google">Google</a> from <a href="https://www.google.com/"  target="_blank" rel="noopener noreferrer" title="Google">www.google.com</a></div>
+            <div class="w-100">
+                <!--attributions-->
+                <div class="mt-5 w-100 mx-auto">GitHub icon made by <a href="https://www.flaticon.com/authors/freepik"
+                        target="_blank" rel="noopener noreferrer" title="Freepik">Freepik</a> from <a
+                        href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer"
+                        title="Flaticon">www.flaticon.com</a></div>
+                <div class="mt-3 mx-auto">Other icons made by <a href="https://www.flaticon.com/authors/google"
+                        target="_blank" rel="noopener noreferrer" title="Google">Google</a> from <a
+                        href="https://www.google.com/" target="_blank" rel="noopener noreferrer"
+                        title="Google">www.google.com</a></div>
             </div>
 
         </div>
     </div> <!-- end of contact section -->
 
 
-</div>
+    </div>
 
 
-    
-    
+
+
 </body>
+
 </html>
