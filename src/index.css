@@ -16,6 +16,8 @@ code {
     width: 100vw;
     display: flex;
     justify-content: space-around;
+    padding: 20px;
+    background-color: blue;
 }
 .link {
     font-size: 1.5em;
@@ -23,4 +25,8 @@ code {
 
 .active {
     border: 2px solid black;
+}
+.header {
+    margin: 0px;
+    background-color: blue;
 }

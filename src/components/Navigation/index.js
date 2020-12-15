@@ -9,6 +9,8 @@ function Navigation() {
     }
 
     return (
+        <div>
+            <h2 className="header">Alex Ostrowski</h2>
         <div className="navigation">
             
             <Link to={`/`}>
@@ -52,6 +54,7 @@ function Navigation() {
                     Contact
                 </div>
             </Link>
+        </div>
         </div>
     )
 }

@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -10,13 +9,12 @@ import './App.css';
 
 function App() {
     
-
     return (
         <Router>
             <div className="App">
                 <Navigation />
 
-                <div className="container"></div>
+                
                 <Route exact path="/">
                     <Home />
                 </Route>

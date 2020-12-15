@@ -1,4 +1,4 @@
-var color1 = "#0066ff";
+/*var color1 = "#0066ff";
 var color2 = "#FCF97A";
 
 $(document).ready(function() {
@@ -124,4 +124,4 @@ function expandNav() {
     } else {
       x.style.display = "block";
     }
-}
+}*/

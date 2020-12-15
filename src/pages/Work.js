@@ -1,6 +1,11 @@
+//require("popper.js");
+import Carousel from "../components/WorkCarousel"
+
 function Work() {
     return (
-        <div>this is the work examples page.</div>
+        <>
+            <Carousel></Carousel>
+        </>
     );
 }
 export default Work;
