@@ -14,7 +14,6 @@ function Home() {
             crossDomain: true,
             dataType: "jsonp",
             success: function (parsed_json) {
-                console.log(parsed_json);
                 $("#comic").html("");
                 $("#comic").append(
                     $("<h3/>").text(parsed_json["title"] + ", #" + parsed_json["num"]),
@@ -30,12 +29,12 @@ function Home() {
     };
     return (
         <>
-                    <p>Welcome!</p>
+            <p>Welcome!</p>
             <p>I'm Alex Ostrowski and I'm a test-engineer-turned-web-developer.</p>
-            <p class="hide-on-mobile">Feel free to check out some comics from <a href="https://xkcd.com/"
+            <p className="hide-on-mobile">Feel free to check out some comics from <a href="https://xkcd.com/"
                     target="_blank" rel="noopener noreferrer">xkcd</a>. These hilarious comics often contain references
                 to both engineering and programming, so I particularly enjoy them!</p>
-            <section class="comic-section hide-on-mobile">
+            <section className="comic-section hide-on-mobile">
                 <button id="randomizer" onClick={function () {
                     updateComic(Math.floor((Math.random() * 2312) + 1));
                 }}>Get Random xkcd comic</button>

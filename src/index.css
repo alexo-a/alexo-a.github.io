@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -16,17 +17,97 @@ code {
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: blue;
+    padding: 10px;
+    background-color: #007bff;
 }
+
 .link {
     font-size: 1.5em;
 }
 
-.active {
-    border: 2px solid black;
-}
+
 .header {
     margin: 0px;
-    background-color: blue;
+    background-color: #007bff;
+}
+
+#root{
+    background-color: #007bff;
+    min-height: 100vh;
+}
+
+.contentPage {
+    height: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+/*.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}*/
+
+.carousel-arrow {
+    font-weight: bolder;
+    font-size: 5em;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+}
+
+
+.example-container {
+    max-height: 85vh;
+}
+/*
+.example-container {
+    height: 85vh;
+}*/
+
+.caption {
+    border-radius: 15px;
+    border: 1x solid darkgrey;
+    background-color: rgba(0,0,0,.75);
+    width: 75%;
+    margin: 0px auto;
+}
+/*
+.caption > h5, .caption>p{
+    text-align: center;
+}*/
+
+.contact-icon{
+    height: 50px;
+    width: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.links .btn {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* SMALL */
+@media (max-width: 576px) {
+
+    .example-container {
+        min-height: 70vh;
+    }
+    .links .btn {
+        padding: 0px;
+        margin:0px;
+    }
+
 }

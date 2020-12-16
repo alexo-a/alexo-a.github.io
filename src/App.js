@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Hobbies from "./pages/Hobbies";
 import Work from "./pages/Work";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import './App.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                 <Route exact path="/work">
                     <Work />
                 </Route>
+                <Footer />
             </div>
         </Router>
     );
