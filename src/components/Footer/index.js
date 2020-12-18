@@ -8,11 +8,11 @@ function Footer() {
 
 
     return (
-        <>
-            <a href="www.google.com"><img className="contact-icon" src={github} /></a>
-            <a href="www.google.com"><img className="contact-icon" src={gmail} /></a>
-            <a href="www.google.com"><img className="contact-icon" src={linkedin} /></a>
-        </>
+        <div className="footer d-flex fixed-bottom justify-content-center">
+            <a href="www.google.com"><img className="contact-icon" src={github} alt="github link" /></a>
+            <a href="www.google.com"><img className="contact-icon" src={gmail} alt="email link" /></a>
+            <a href="www.google.com"><img className="contact-icon" src={linkedin} alt="linkedin link" /></a>
+        </div>
     )
 }
 

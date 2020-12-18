@@ -99,6 +99,15 @@ code {
     font-weight: bold;
 }
 
+
+/* medium */
+@media only screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+}
+
 /* SMALL */
 @media (max-width: 576px) {
 
@@ -107,7 +116,8 @@ code {
     }
     .links .btn {
         padding: 0px;
-        margin:0px;
+        margin: 0px;
     }
 
 }
+
