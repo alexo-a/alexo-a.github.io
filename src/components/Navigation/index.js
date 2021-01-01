@@ -16,13 +16,13 @@ function Navigation() {
             <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
                 <Navbar.Brand>
                     <Link to={`/`}>
-                        <div onClick={() => { updateState("home") }}><h4>Alex Ostrowski</h4></div>
+                        <div className="mt-2" onClick={() => { updateState("home") }}><h4>Alex Ostrowski</h4></div>
                     
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
+                    <Nav className="mr-auto text-right">
 {/*
                         <Nav.Link>                    
                             <Link to={`/about`}>
