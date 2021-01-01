@@ -99,6 +99,15 @@ code {
     font-weight: bold;
 }
 
+.language-box img {
+ height: 100px;
+ width: 100px;
+}
+
+.language-box .wide {
+    width: 180px;
+}
+
 
 /* medium */
 @media only screen and (max-width: 768px) {
