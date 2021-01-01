@@ -29,6 +29,7 @@ function Home() {
                 $("#comic").append(
                     $("<h3/>").text(parsed_json["title"] + ", #" + parsed_json["num"]),
                     $("<img/>").attr({
+                        class: "mw-100",
                         src: parsed_json["img"],  //add image
                         alt: parsed_json["alt"],  //add alt text
                         title: parsed_json["title"]
@@ -48,15 +49,17 @@ function Home() {
 
                 <p>I completed the UW-Extended Campus Coding Bootcamp, which taught me how to be a full-stack MERN web developer.</p>
 
-                    <p className="hide-on-mobile">Feel free to check out some comics from <a href="https://xkcd.com/" className="text-reset"
+                <p className="hide-on-mobile">
+                    Feel free to check out some comics from 
+                    <a href="https://xkcd.com/" className="text-reset"
                         target="_blank" rel="noopener noreferrer"><u>xkcd</u></a>. These hilarious comics often contain references
-                to both engineering and programming, so I particularly enjoy them!</p>
-                    <section className="comic-section hide-on-mobile">
-                        <button id="randomizer" onClick={function () {
-                            updateComic(Math.floor((Math.random() * 2312) + 1));
-                        }}>Get Random xkcd comic</button>
-                        <div id="comic">No Comic</div>
-                    </section>
+                    to both engineering and programming, so I particularly enjoy them!</p>
+                <section className="comic-section hide-on-mobile">
+                    <button id="randomizer" onClick={function () {updateComic(Math.floor((Math.random() * 2312) + 1));}}>
+                        Get Random xkcd comic
+                    </button>
+                    <div id="comic">No Comic</div>
+                </section>
 
             </div>
             <div className="col-md-4 col-sm-5 w-xs-50 px-xs-5">

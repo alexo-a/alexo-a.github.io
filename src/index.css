@@ -12,6 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#comic-section {
+    width: 100%;
+}
+#comic {
+    width: 100%;
+}
+#comic img {
+    object-fit: contain;
+}
 
 .navigation {
     width: 100vw;
