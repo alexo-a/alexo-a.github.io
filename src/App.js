@@ -7,11 +7,18 @@ import Work from "./pages/Work";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import './App.css';
+import {Helmet} from "react-helmet"
 
 function App() {
     
     return (
         <Router>
+            <Helmet>
+                <title>Alex Ostrowski | Engineer</title>
+
+
+            </Helmet>
+            
             <div className="App">
                 <Navigation />
 

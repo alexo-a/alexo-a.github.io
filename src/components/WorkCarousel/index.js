@@ -8,6 +8,7 @@ import Item from "react-bootstrap/CarouselItem"
 import Caption from "react-bootstrap/CarouselCaption"
 import React, { useState } from 'react';
 import hopto from "../../assets/images/HopTo.PNG"
+import fungeoncrawler from "../../assets/images/fungeon-crawler.PNG"
 import pagebound from "../../assets/images/Pagebound.png"
 import projectivity from "../../assets/images/Projectivity2.png"
 import $ from "jquery"
@@ -17,23 +18,30 @@ function WorkCarousel() {
         {
             img: projectivity,
             title: "Projectivity",
-            caption: "Dolor cupidatat quis ad pariatur ipsum aliquip eu eiusmod ex excepteur nulla nostrud.",
-            repositoryURL: "",
-            applicationURL: ""
+            caption: "Designed for the hands-on manager, Projectivity allows one to create a project with as many tasks as desired. You can check task progress and export reports to pdf.",
+            repositoryURL: "https://github.com/alexo-a/projectivity",
+            applicationURL: "https://evening-dawn-14533.herokuapp.com/login"
         },
         {
             img: pagebound,
             title: "Pagebound",
-            caption: "Labore magna irure sunt consequat nostrud qui labore tempor nulla.",
-            repositoryURL: "",
-            applicationURL: ""
+            caption: "Our social-distancing-friendly approach to the classic book club. Start or join a club, wherein the administrator can select a new book. Users in a club can create new or contribute to existing discussions. Users can also direct-message one another for private conversations.",
+            repositoryURL: "https://github.com/TheBobbyLlama/pagebound",
+            applicationURL: "https://tranquil-shelf-96400.herokuapp.com/"
         },
         {
             img: hopto,
             title: "HopTo",
-            caption: "Consequat laboris Lorem dolor velit elit aliquip do duis Lorem ullamco consequat elit labore Lorem.",
-            repositoryURL: "",
-            applicationURL: ""
+            caption: "Fancy a beer? HopTo will help you get to a brewery of your choice. Even better, HopTo will help you plan a trip to visit multiple breweries and will calculate a Bing Maps route for you! Users can also keep track of breweries they've visited and can favorite their most-loved breweries.",
+            repositoryURL: "https://github.com/laurenceokite/hop-to",
+            applicationURL: "https://laurenceokite.github.io/hop-to/"
+        },
+        {
+            img: fungeoncrawler,
+            title: "Fungeon Crawler (pre-pre-pre-Alpha)",
+            caption: "Do you like dungeon crawler RPGs such as Diablo or Etrian Odyssey? If so, this game will probably disappoint you. My personal project, Fungeon Crawler is a D&D-like game where users can explore dungeons and fight (then loot) enemies.",
+            repositoryURL: "https://github.com/alexo-a/fungeon-crawler",
+            applicationURL: "https://alexo-a.github.io/fungeon-crawler/"
         }
     ]
 
@@ -87,8 +95,9 @@ function WorkCarousel() {
                             <h3 className="p-0 pt-1">{ex.title}</h3>
                             <p className="p-0 mb-0">{ex.caption}</p>
                             <div className="links mb-3 mt-0">
-                                <Button href={ex.applicationURL} variant="primary">Application</Button>
-                                <Button href={ex.repositoryURL} variant="primary">Repository</Button>
+                                <Button href={ex.applicationURL} target="_blank" rel="noopener noreferrer" variant="primary">Application</Button>
+                                <Button href={ex.repositoryURL} target="_blank" rel="noopener noreferrer"
+                                    variant="primary">Repository</Button>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
