@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.56caa440.chunk.css",
+    "main.js": "/static/js/main.0ee089b3.chunk.js",
+    "main.js.map": "/static/js/main.0ee089b3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2e4c812c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2e4c812c.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.dd7c047a.chunk.js": "/static/js/2.dd7c047a.chunk.js",
+    "static/js/2.dd7c047a.chunk.js.map": "/static/js/2.dd7c047a.chunk.js.map",
+    "static/js/3.42cac706.chunk.js": "/static/js/3.42cac706.chunk.js",
+    "static/js/3.42cac706.chunk.js.map": "/static/js/3.42cac706.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.56caa440.chunk.css.map": "/static/css/main.56caa440.chunk.css.map",
+    "static/js/2.dd7c047a.chunk.js.LICENSE.txt": "/static/js/2.dd7c047a.chunk.js.LICENSE.txt",
+    "static/media/HopTo.68b2e9f4.PNG": "/static/media/HopTo.68b2e9f4.PNG",
+    "static/media/Pagebound.c7c3438f.png": "/static/media/Pagebound.c7c3438f.png",
+    "static/media/Projectivity2.f035ba93.png": "/static/media/Projectivity2.f035ba93.png",
+    "static/media/arduino_logo.0e2b0a69.png": "/static/media/arduino_logo.0e2b0a69.png",
+    "static/media/fungeon-crawler.fe604043.PNG": "/static/media/fungeon-crawler.fe604043.PNG",
+    "static/media/github.f34760d8.svg": "/static/media/github.f34760d8.svg",
+    "static/media/gmail.e950bb85.svg": "/static/media/gmail.e950bb85.svg",
+    "static/media/javascript_logo.26cc380e.png": "/static/media/javascript_logo.26cc380e.png",
+    "static/media/linkedin.e3b78533.svg": "/static/media/linkedin.e3b78533.svg",
+    "static/media/mongo_logo.057de5cd.png": "/static/media/mongo_logo.057de5cd.png",
+    "static/media/python_logo.63580e54.png": "/static/media/python_logo.63580e54.png",
+    "static/media/react_logo.928f956d.svg": "/static/media/react_logo.928f956d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e4c812c.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.dd7c047a.chunk.js",
+    "static/css/main.56caa440.chunk.css",
+    "static/js/main.0ee089b3.chunk.js"
+  ]
+}
