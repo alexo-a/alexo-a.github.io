@@ -50,7 +50,7 @@ function Home() {
                 <p>I completed the UW-Extended Campus Coding Bootcamp, which taught me how to be a full-stack MERN web developer.</p>
 
                 <p className="hide-on-mobile">
-                    Feel free to check out some comics from 
+                    Feel free to check out some comics from <span> </span>
                     <a href="https://xkcd.com/" className="text-reset"
                         target="_blank" rel="noopener noreferrer"><u>xkcd</u></a>. These hilarious comics often contain references
                     to both engineering and programming, so I particularly enjoy them!</p>
